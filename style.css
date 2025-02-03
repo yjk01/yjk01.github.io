@@ -258,3 +258,10 @@ html {
 .custom-font {
   font-family: "Newsreader", serif; /* Use Newsreader font */
 }
+
+.compression-img-container {
+  grid-column: 1 / 2; /* Place image in the first column */
+  grid-row: 2 / 3; /* Place image in the second row */
+  justify-self: center; /* Center the image horizontally */
+  align-self: center; /* Center the image vertically */
+}
