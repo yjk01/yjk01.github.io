@@ -1,0 +1,260 @@
+:root {
+  --font-size: 16px; /* Default font size */
+  --font-family: Arial, sans-serif; /* Default font family */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.profile-pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #000000;
+}
+
+nav {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  padding: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #555555;
+}
+
+main {
+  padding: 0;
+}
+
+h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  background-color: #f0f0f0;
+  border: 2px solid #000000;
+  padding: 1rem;
+  text-align: left;
+}
+
+.item img {
+  max-width: 700px; /* Default maximum width */
+  border-radius: 10px;
+  margin-right: 1rem;
+  grid-column: 2 / 3; /* Place image in the second column */
+  grid-row: 2 / 3; /* Place image in the second row */
+  justify-self: center; /* Center the image horizontally */
+  align-self: center; /* Center the image vertically */
+}
+
+.compression-text-container {
+  grid-column: 2 / 3; /* Place text in the second column */
+  grid-row: 2 / 3; /* Place text in the second row */
+  justify-self: center; /* Center the text horizontally */
+  align-self: center; /* Center the text vertically */
+}
+
+.item-text-container {
+  grid-column: 2 / 3; /* Place text in the second column */
+  grid-row: 2 / 3; /* Place text in the second row */
+  justify-self: center; /* Center the text horizontally */
+  align-self: center; /* Center the text vertically */
+}
+
+.item-header {
+  grid-column: 1 / -1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center; /* Center the text horizontally */
+  justify-self: center; /* Center the header horizontally in the grid */
+  align-self: center; /* Center the header vertically in the grid */
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+}
+
+/* Specific styles for Class Projects section */
+#projects .item img {
+  max-width: 600px; /* Adjust the maximum width for Class Projects */
+}
+
+/* Specific styles for Co-curricular Activities section */
+#co-curricular .item img {
+  max-width: 380px; /* Adjust the maximum width for Co-curricular Activities */
+}
+
+/* Specific styles for Others section */
+#others .item img {
+  max-width: 400px; /* Adjust the maximum width for Others */
+}
+
+.item p {
+  flex: 1;
+  font-family: "Newsreader", serif; /* Use Newsreader font */
+  text-indent: 2em; /* Indentation for paragraphs */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+.reflection-block {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #000000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+/* Remove styles for separate pages */
+.page {
+  min-height: 100vh; /* Ensure each section takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem; /* Add spacing between sections */
+}
+
+.page.active {
+  display: block;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%; /* Ensure the container takes full width */
+  margin-right: 1rem;
+  overflow: hidden; /* Ensure images fit within the container */
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  display: none; /* Hide all images by default */
+}
+
+.slideshow-container img.active {
+  display: block; /* Show only the active image */
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 10; /* Ensure arrows are above the images */
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px; /* Adjust to ensure it stays inside the container */
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 10px; /* Adjust to ensure it stays inside the container */
+  border-radius: 0 3px 3px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.intro-content img {
+  border-radius: 50%;
+  border: 3px solid #000000;
+  margin-right: 2rem; /* Add moderate space */
+  width: var(--profile-pic-width, 150px); /* Use CSS variable for width */
+  height: var(--profile-pic-height, 150px); /* Use CSS variable for height */
+}
+
+.intro-content p {
+  flex: 1;
+}
+
+.intro-content div {
+  flex: 1;
+}
+
+.intro-name {
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+}
+
+.intro-major {
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+}
+
+.custom-font {
+  font-family: "Newsreader", serif; /* Use Newsreader font */
+}

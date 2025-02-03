@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --profile-pic-width: 600px;
+            --profile-pic-height: 600px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#projects">Class Projects</a></li>
+            <li><a href="#co-curricular">Co-curricular Activities</a></li>
+            <li><a href="#others">Others</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro" class="page active">
+            <h2>Welcome</h2>
+            <div class="intro-content">
+                <img src="src/profile.jpg" alt="Your Photo" class="profile-pic">
+                <div>
+                    <h1 class="intro-name">Yejun Kim</h1>
+                    <h3 class="intro-major">Computer Science</h3>
+                    <p class="custom-font">Welcome to my portfolio! This site highlights my university journey, from class projects to reflections.</p>
+                    <p class="custom-font">I am a Senior Computer Science student at Abilene Christian University</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <h2>Class Projects</h2>
+            <div class="gallery">
+                <!-- Add photos and descriptions here -->
+                <div class="item">
+                    <div class="item-header">Box Project</div>
+                    <div class="slideshow-container">
+                        <img src="src/Box_proj/box_1.jpg" alt="Project 1 Image 1" class="active">
+                        <img src="src/Box_proj/box_2.jpg" alt="Project 1 Image 2">
+                        <img src="src/Box_proj/box_3.jpg" alt="Project 1 Image 3">
+                        <img src="src/Box_proj/box_4.jpg" alt="Project 1 Image 3">
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <div class="item-text-container">
+                        <p>The box project was the final project that I had to complete for Dr. Reeve’s Software Engineering 1 class. The goal was to create a console based Java program that generated the svg code for a box based on the inputs of the user. The svg code then would be used by the laser cutters as guidelines to cut out the six sides of the box. We were not able to use any adhesives for the final product, so accurate measurements were required. I was teamed up with Julio Lopez and Miranda Hixon who were wonderful teammates. I was in charge of getting the core logic and coding most of the program.</p>
+                        <p>Software Engineering 1 was the first class to introduce me to the Agile Method. Although I cannot confidently say that the Agile methodology was followed throughout the development, through Dr. Reeves’ guidelines, we were able to practice some aspects of it. Moreover, this was one of my first semester long team projects that required a lot of communication and collaboration. Through this project, I learned how to leverage the individual abilities of each teammate and make the best outcome out of our capabilities. Being able to contribute to a huge portion of the project made me proud of this project and it is still one of the few projects that are showcased on my github main page.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header">HCI Project</div>
+                    <div class="slideshow-container">
+                        <img src="src/HCI_proj/hci_1.jpg" alt="Project 2 Image 1" class="active">
+                        <img src="src/HCI_proj/hci_2.jpg" alt="Project 2 Image 1">
+                        <img src="src/HCI_proj/hci_3.jpg" alt="Project 2 Image 1">
+                        <img src="src/HCI_proj/hci_4.jpg" alt="Project 2 Image 1">
+                        <img src="src/HCI_proj/hci_5.jpg" alt="Project 2 Image 1">
+                        <img src="src/HCI_proj/hci_6.jpg" alt="Project 2 Image 1">
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <div class="item-text-container">
+                        <p>For the final presentation for HCI, I partnered with O'Brien Verdin and Sam Blalock to create a fitness watch interface called Mike. In this project, we selected a mockup that we have already completed and completed a round of usability testing on five users. We identified at least three tasks that the users will do, created a mockup, created a GOMS analysis, performed usability testing on users, and finally updated the user interface based on the results of the testing. Key features that we implemented were the ability to record an activity, gain insightful data about the exercise, and use the map feature to track your run routes. Main feedback that we received from the users during the user testing involved the user interface being too small or cramped.</p>
+                        <p>Leading up to this assignment were multiple mockups that my partner and I had to create. Through these mockups, I was able to not only learn how to use Figma, but also learned the importance of following HCI principles when designing products. Moreover, user testing was a big part of the assignment and it opened my eyes to how different users would use my products. Most assignments including this particular assignment were done in teams. I once again learned how to leverage each other’s abilities to streamline the process from generating the ideas and implementing them through Figma.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">Macro Tracking App</div>
+                    <div class="slideshow-container">
+                        <img src="src/Macro_proj/macro_1.png" alt="Project 3 Image 1" class="active">
+                        <img src="src/Macro_proj/macro_2.jpg" alt="Project 3 Image 1">
+                        <img src="src/Macro_proj/macro_3.jpg" alt="Project 3 Image 1">
+                        <img src="src/Macro_proj/macro_4.jpg" alt="Project 3 Image 1">
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <div class="item-text-container">
+                        <p>The macro tracking app was a final project that I worked on for my Mobile Application Development class. I mainly utilized the Jetpack Compose toolkit to develop the app. Throughout the semester, I was taught the basics of Android Studio, how to create simple interfaces, how to create a logo for an app, and much more. This project allowed me to use all the skills learned throughout the semester and create something of value to my life. I have a habit of tracking the amount of calories, sugar, sodium, and protein consumed. Therefore this app would bring value into my life by providing me with a hub to record my daily macros.</p>
+                        <p>Project 2 description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header">Huffman and LZW Encoding</div>
+                    <div class="compression-img-container">
+                        <img src="src/Compression_proj.png" alt="Project 4 Image 1" class="active">
+                    </div>
+                    <div class="compression-text-container">
+                        <p>The Huffman and LZW encoding project was a console based Java program that I worked on for Dr. Reeves in Software Engineering 2. The main goal of this program was to compress files using two different compression methods: Huffman encoding and LZW encoding. Moreover, I implemented an archiving functionality using tar. Before working on the project, I had to learn how Huffman and LZW encoding worked. To achieve this, multiple weeks were spent working with bits and trees. Once the basics were learned, I started to implement the program in Java and was able to create a lossless compression program.</p>
+                        <p>This project was a great opportunity to remind myself that programming is not easy! Even before we had the opportunity to code, we spent weeks learning the foundations of Huffman encoding. This practice set me into the right mindset of putting in the actual effort to figure out how I would approach a program. Moreover, the joy of solving a problem together and collaborating in and out of class was an experience that I would remember for a long time. Through this project not only did I learn to lay the groundwork for a project, but also experienced the joy of solving hard problems together with others.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="co-curricular" class="page">
+            <h2>Co-curricular Activities</h2>
+            <div class="gallery">
+                <div class="item">
+                    <div class="item-header">Team 55</div>
+                    <div class="slideshow-container">
+                        <img src="src/T_55/T55_1.JPG" alt="Activity 1 Image 1" class="active">
+                        <img src="src/T_55/T55_2.JPG" alt="Activity 1 Image 2">
+                        <img src="src/T_55/T55_3.JPG" alt="Activity 1 Image 3">
+                        <img src="src/T_55/T55_4.JPG" alt="Activity 1 Image 4">
+                        <img src="src/T_55/T55_5.JPG" alt="Activity 1 Image 5">
+                        <a class="prev">&#10094;</a> <!-- Ensure class name is 'prev' -->
+                        <a class="next">&#10095;</a> <!-- Ensure class name is 'next' -->
+                    </div>
+                    <div class="item-text-container">
+                        <p>Team 55, now known as ITSC, has been a crucial part of my journey at ACU. I joined Team 55 during my second semester of freshman year because a few friends that already applied wanted me to do so too. It was the best choice I have made. I have learned so much about the functions of an IT department in an organization. Working for Team 55 has positively impacted me in choosing a career path in the IT infrastructure industry, which was a slight detour from my initial goal of becoming a software engineer. If I had to choose one favorite activity I have done for Team 55 was helping out the System Administrators configure and manage assets for ACU. Aside from tier 2 support such as system administration, tier 1 support such as the frontdesk or the call center provide great ways to train my soft skills.</p>
+                        <p>Soft skills would be the number one thing I have improved a lot through my experiences with Team 55. Talking with customers over the phone, sending professional emails, and interacting with customers at the front desk were all great opportunities for me to learn how to communicate technical solutions to customers who were usually not technologically sufficient. In addition to soft skills, I have learned valuable insights about the IT industry. From configuring computers to managing network devices on campus, Team 55 has provided me the opportunity to experience different sectors of an IT department. As a result of my 3.5 years with Team 55, I have realized my passion for helping others, especially with technology. I want to use my God given gift of delivering technological solutions to others in a way that does not put a giant barrier in between me and the customer.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header">International Students Association</div>
+                    <div class="slideshow-container">
+                        <img src="src/ISA/isa_1.jpg" alt="Activity 2 Image 1" class="active">
+                        <img src="src/ISA/isa_2.jpeg" alt="Activity 2 Image 2">
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <div class="item-text-container">
+                        <p>The International Students Association was a group that I regularly participated in. It was an association for international students to share cultures and invite others to share the joy of diversity. ISA was not restricted to international students but many local students also joined the group to experience the different cultures. ISA held chapels and multiple multicultural events around campus throughout the semesters. The most memorable event for me would be the international dinners at the Green’s house. It was a welcoming experience everytime just being able to share one another’s stories and bless each other.</p>
+                        <p>The International Students Association was a group that I regularly participated in. It was an association for international students to share cultures and invite others to share the joy of diversity. ISA was not restricted to international students but many local students also joined the group to experience the different cultures. ISA held chapels and multiple multicultural events around campus throughout the semesters. The most memorable event for me would be the international dinners at the Green’s house. It was a welcoming experience everytime just being able to share one another’s stories and bless each other.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="others" class="page">
+            <h2>Others</h2>
+            <div class="gallery">
+                <div class="item">
+                    <div class="item-header">Kodiak Building Partners Internship</div>
+                    <div class="slideshow-container">
+                        <img src="src/Kodiak/kodiak_1.jpg" alt="Activity 1 Image 1" class="active">
+                        <img src="src/Kodiak/kodiak_2.jpg" alt="Activity 1 Image 2">
+                        <img src="src/Kodiak/kodiak_3.jpg" alt="Activity 1 Image 3">
+                        <img src="src/Kodiak/kodiak_4.jpg" alt="Activity 1 Image 4">
+                        <a class="prev">&#10094;</a> <!-- Ensure class name is 'prev' -->
+                        <a class="next">&#10095;</a> <!-- Ensure class name is 'next' -->
+                    </div>
+                    <div class="item-text-container">
+                        <p>I had the opportunity to intern at Kodiak Building Partners my Junior year. As an IT intern, I was assigned two major projects which consisted of shadowing System Administrators and working on an AI chatbot for the IT department. I gained valuable experience as a member of the IT department of a vastly growing company. It was a completely different experience from the IT department at a university. Aside from the corporate work, I had the opportunity to visit multiple companies in downtown Denver including the Colorado Rockies, KORE investment, and several Kodiak subsidiaries. Moreover, the intern group participated in fundraising events and helped out in a food shelter.</p>
+                        <p>Being able to experience the corporate environment was the biggest takeaway from the internship. Having experienced the 9 to 5 for 10 weeks as an intern, I am more excited about the future after graduation. I learned meaningful practices in the corporate environment and made great connections with professionals from different industries. Most importantly, I realized how I enjoyed working with IT infrastructure. Although it is a slight diversion from what I am studying, I began to appreciate the joy that comes from sharing the technical knowledge I have with others. I have received multiple comments about how I excelled in making a non-technical explanation of technical concepts so that others can understand what issue they are dealing with or any questions they have. As a result of this internship, I have made up my mind to pursue a career in IT infrastructure and am excited to expand my knowledge as an IT professional.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header">Dinner Party at Jody's House</div>
+                    <div class="slideshow-container">
+                        <img src="src/Jody/jody_1.jpeg" alt="Activity 2 Image 1" class="active">
+                        <img src="src/Jody/jody_2.jpeg" alt="Activity 2 Image 2">
+                        <img src="src/Jody/jody_3.jpeg" alt="Activity 2 Image 3">
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <div class="item-text-container">
+                        <p>These were photos taken from a dinner party at a lady named Jody’s house. The story that leads us to her house is pretty interesting. A few of my friends and I occasionally played volleyball and hung out at the pool at an apartment complex that a friend lived in. As we spent multiple friday nights hanging out at the pool, we met Jody who was enjoying the pool as well. We got to know each other pretty quick and soon we found ourselves listening to her stories for hours in the pool. As our bond got stronger the more we saw her every weekend, one day she wanted to invite us over to her house for a dinner party. We thought it would be a fun experience and accepted her kind offer and planned for a fun night. Unfortunately, it took over several weeks to finalize the perfect day and it finally settled on the Monday night of finals week. Although we could not stay long at her place for a long time due to it being finals week, we had a great time with Jody and it is a great memory from Junior year.</p>
+                        <p>The relationship between us and Jody was something that displayed how God blessed me with random connections that brought great experiences in return. Jody appreciated her gratitude towards us for being gentlemen out on the volleyball field and the pool. She said that many college students were not respectful towards the residences by loitering the place or playing loud music. This showed how Christians could set a great example towards others. Through our demeanor, we were not only able to make a great friend, but also display a Christlike character.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection" class="page">
+            <h2>Reflection</h2>
+            <div class="reflection-block">
+                <p class="custom-font">Choosing to study computer science was not a hard decision to make my last year in high school. Having been influenced by my father, who is a software developer, and loving computers growing up, I knew I wanted to study computer science. However, I did not have much knowledge coming into college. AP Computer Science, some java programming in high school, and making small games using Unity were the bare minimum that I had when coming into ACU as a computer science major. I honestly did not know what I was to expect from ACU and the department, but surely I was excited to start my college career.</p>
+                <p class="custom-font">Sitting in ITC 110, I remember being around a bunch of people who were enthusiastic about games, programming languages, and all the nerdy things that you can imagine. I sat there not knowing what I liked nor what I wanted to do for the projects. However, I had one thing I knew I was capable of doing: studying. I knew that I could sit down and work on a program and make it work whatever the cause was. I knew that I would not be satisfied with a B and strive to get an A. This meant several hours invested in searching Google, looking for the perfect Stackoverflow page, and watching tutorials on Youtube. I was not afraid to do so and succeeded in doing so.</p>
+                <p class="custom-font">Most classes, Major related or not, were not hard to prepare for and fortunately, I was able to complete most of them with good grades (maybe not Intro to Algorithm). I made sure I stayed focused in class, turned in my assignments on time, and invested time on studying for quizzes and exams. Speaking of Intro to Algorithms, it was probably the first class that I actually struggled with and somewhat gave up on receiving a good grade on the class. Added on to that, it was my last semester at ACU before flying back home and not to return for two years.</p>
+                <p class="custom-font">After my two year gap year, returning back to academics was not easy. My brain was washed with all the prep work done in Programming 1 and 2 and all the programming classes I took during my Freshman and Sophomore years. Moreover, with the introduction of Generative AI into the world, I could not find myself working as hard as I did before taking the gap years. However, my thought of getting an A still did not change because I firmly believed that grades did not lie and would reflect the amount of effort I put into studies. Now, I see myself writing a self reflection for my Capstone class, which will set the end to my academic journey at ACU.</p>
+            </div>
+            <div class="reflection-block">
+                <p class="custom-font">Coming to Abilene Christian University was a big change that I made in my life. I remember myself being disappointed about coming to Abilene rather than attending bigger state schools. I could not understand why my parents wanted me to go to a Christian university. However, as I grew older and experienced more of what the world was like, I began to appreciate the decisions that my parents allowed me to make. Staying in a Christian community was the wisest decision to make during my transition in life.</p>
+                <p class="custom-font">I have lived my life inside the “Christian bubble” my whole life. Christian school, friends, and family, looking back, I was blessed to have Christ everywhere in my life. Luckily, coming to ACU extended the blessing into my life in a city far away from home. Christian friends, professors, and faculty members, I was once again surrounded by great people and in a great environment. Moreover, God has driven me closer to Him by introducing me to several churches around Abilene and I was able to settle at a small Korean church in Abilene.</p>
+                <p class="custom-font">International Baptist Church is a small Korean church located near S 1st St. With only 30ish members, the community inside the church was small. Sometimes, I thought to myself whether to attend a bigger church in Abilene due to the lack of younger adults at the church and the lack of fellowship opportunities outside of Sunday service. However, through many years, God has reinforced me to stay at the church by providing me ways to serve the church and the elderly. Helping out with the technology, food, and maintenance, there were many ways that a young adult like myself could serve the church community.</p>
+                <p class="custom-font">Lastly, I thank the Lord for being besides me throughout the years in Abilene. 2020 and 2021 were two years that brought a big challenge to my faith journey. Not being able to attend church put me in a situation where I could get lazy in my relationship with God. However, this was when God reassured me through the church community back home. Watching sermons from my home church through the internet was a blessing and still having great Christians around me was another big blessing that God has given me. The ungrateful attitude of coming to a Christian university has changed through the numerous experiences that God has provided me throughout my faith journey.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jun Kim</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
