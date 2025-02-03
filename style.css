@@ -1,6 +1,7 @@
 :root {
   --font-size: 18px; /* Default font size */
   --font-family: Arial, sans-serif; /* Default font family */
+  --item-opacity: 0.7; /* Default opacity for item container */
 }
 
 /* General Reset */
@@ -14,7 +15,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: #000000;
-  background-color: #ffffff;
+  background-color: #eef1ef;
   line-height: 1.6;
 }
 
@@ -55,8 +56,28 @@ nav {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
   font-size: 0.9rem; /* Set specific font size for navbar links */
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000000;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #000000;
 }
 
 .nav-links a:hover {
@@ -86,8 +107,8 @@ h2 {
   grid-template-rows: auto 1fr;
   gap: 1rem;
   align-items: start;
-  background-color: #f0f0f0;
-  border: 2px solid #000000;
+  background-color: rgba(239, 238, 241, var(--item-opacity));
+  border: 1px solid #000000;
   padding: 1rem;
   text-align: left;
 }
@@ -156,8 +177,13 @@ h2 {
 .item p {
   flex: 1;
   font-family: "Newsreader", serif; /* Use Newsreader font */
-  text-indent: 2em; /* Indentation for paragraphs */
+  text-indent: 2ch; /* Indentation for paragraphs */
   margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+.reflection-container {
+  display: flex;
+  gap: 2rem; /* Space between the two reflection blocks */
 }
 
 .reflection-block {
@@ -165,6 +191,11 @@ h2 {
   padding: 1rem;
   margin: 1rem 0;
   border-left: 5px solid #000000;
+  flex: 1; /* Ensure both blocks take equal space */
+}
+
+.reflection-block p {
+  text-indent: 2ch; /* Indentation for paragraphs */
 }
 
 footer {
