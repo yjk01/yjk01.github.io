@@ -1,10 +1,9 @@
 :root {
   --font-size: 18px; /* Default font size */
   --font-family: Arial, sans-serif; /* Default font family */
-  --item-opacity: 0.7; /* Default opacity for item container */
+  --item-opacity: 0.7;
 }
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  color: #000000;
+  color: #424342;
   background-color: #eef1ef;
   line-height: 1.6;
 }
@@ -34,7 +33,7 @@ header {
 }
 
 h1 {
-  color: #000000;
+  color: #424342;
 }
 
 nav {
@@ -57,7 +56,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s, border-bottom 0.3s;
-  font-size: 0.9rem; /* Set specific font size for navbar links */
+  font-size: 0.9rem; /*specific font size for navbar  */
   position: relative;
 }
 
@@ -89,9 +88,9 @@ main {
 }
 
 h2 {
-  color: #000000;
+  color: #424342;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #5c5d5c;
   padding-bottom: 0.5rem;
 }
 
@@ -124,17 +123,17 @@ h2 {
 }
 
 .compression-text-container {
-  grid-column: 2 / 3; /* Place text in the second column */
-  grid-row: 2 / 3; /* Place text in the second row */
-  justify-self: center; /* Center the text horizontally */
-  align-self: center; /* Center the text vertically */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  align-self: center;
 }
 
 .item-text-container {
-  grid-column: 2 / 3; /* Place text in the second column */
-  grid-row: 2 / 3; /* Place text in the second row */
-  justify-self: center; /* Center the text horizontally */
-  align-self: center; /* Center the text vertically */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  align-self: center;
 }
 
 .item-header {
@@ -190,7 +189,7 @@ h2 {
   background-color: #f0f0f0;
   padding: 1rem;
   margin: 1rem 0;
-  border-left: 5px solid #000000;
+  border-left: 5px solid #5c5d5c;
   flex: 1; /* Ensure both blocks take equal space */
 }
 
@@ -200,9 +199,14 @@ h2 {
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 0.3rem;
   background-color: #e0e0e0;
   color: #000000;
+}
+
+footer p {
+  font-size: 0.1rem; /* Smaller font size for footer text */
+  margin: 0; /* Remove default margin */
 }
 
 /* Remove styles for separate pages */
@@ -272,7 +276,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
+  margin-top: 6.5rem; /* Move the intro content downwards */
 }
 
 .intro-content img {
