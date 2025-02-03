@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     items.forEach(item => {
         item.addEventListener('mouseenter', () => {
-            item.style.transform = 'scale(1.05)';
+            item.style.transform = 'scale(1.02)';
             item.style.transition = 'transform 0.3s';
         });
         
