@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(slideIndex);
     });
 
-    // Add scroll event listener to toggle navbar background
+    // Scroll event listener
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
