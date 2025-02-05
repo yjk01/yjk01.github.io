@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-links a');
+    const navbar = document.querySelector('nav');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
-                const navHeight = document.querySelector('nav').offsetHeight;
+                const navHeight = navbar.offsetHeight;
                 const offsetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - navHeight;
 
                 window.scrollTo({
@@ -57,5 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         showSlide(slideIndex);
+    });
+
+    // Add scroll event listener to toggle navbar background
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     });
 });
